@@ -1,0 +1,68 @@
+\section{Methodology}
+\subsection{Speech Data Set Preparation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Measuring the Tone in ECB Speeches}
+
+\subsubsection{The Picault and Renault dictionary}
+The measure of the monetary policy sentiment of each speech when using the PR dictionary is expressed as follows:
+
+\begin{equation}
+    Tone_{PR_{MP}}=\frac{\#Dovish-\#Hawkish}{\#Dovish+\#Hawkish}
+\end{equation}
+
+Similarly, the measure of the economic outlook sentiment:
+
+\begin{equation}
+    Tone_{PR_{EC}}=\frac{\#Positive-\#Negative}{\#Positive+\#Negative}
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{The Bennani and Neuenkirch dictionary}
+
+\begin{equation}
+    Tone_{BN_{MP}}=\frac{\#Dovish-\#Hawkish}{\#Dovish+\#Hawkish}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{The Loughran and McDonald dictionary}
+
+The LM dictionary was constructed from the 10-K reports, and it consists of 354 (2355) words that convey a positive (negative) tone in financial and economic contexts. I used \textit{pysentiment2} package available in python to apply the LM dictionary on the ECB's raw speeches. This package is specifically designed for the LM dictionary, and it has an integrated tokenization function. Therefore, no manual text preparation was required. The specific code used can be viewed under the \textit{pysentiment2} documentation \footnote{\href{https://nickderobertis.github.io/pysentiment/}{See \textit{pysentiment2} documentation here}}. Table \ref{tab:LMpython} shows the output returned. The first six columns are speech data set that I provided to the Python. Column seven and eight shows the count of positive and negative words within a particular speech. For example, on May 27th 2021, Isabel Schnabel's speech is counted to have 67 positive and 111 negative words. In the last column \textit{pysentiment2} package even calculates the tone of each speech and it does so according to the following formula:
+
+\begin{equation}
+    Tone_{LM}=\frac{\#Positive-\#Negative}{\#Positive+\#Negative}
+\end{equation}
+
+This is the same tone measure that I selected for the PR and BN dictionaries. Therefore, the interpretation of the tone score in Table \ref{tab:LMpython} is analogous to the interpretation of the tone scores under the PR and BN dictionaries. The LM tone scores are  used to test my hypotheses. 
+
+
+\input{tables/LMpython.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{The Econometric Model}
+
+
+\subsubsection{Baseline Model}
+
+
+
+%\begin{equation}
+%    ln(h_{t})=\omega + \theta_{1} (|\frac{\varepsilon_{t-1}}{\sqrt{h_{t-1}}}|-\sqrt \frac{2}{\pi}) + \theta_{2} (\frac{\varepsilon_{t-1}}{\sqrt{h_{t-1}}}) + \theta_{3} ln(h_{t-1}) + \kappa^{MP}SD^{MP}_{t} + \kappa^{EC}SD^{EC}_{t} + \phi XD_{t}
+%\end{equation}
+
+\subsubsection{Extended Model for Speaker Rank}
+I modify my model to determine whether the yield curves are affected differently to speeches by different groups of policy makers within the Executive Board of ECB. I extract three roles - president, vice-president and the remaining policy makers which I simply denominate as board members. 
+
+
+President vs Vice-president
+
+
+President vs Board members 
+
+
+Vice-president vs Board members 
+
+
+

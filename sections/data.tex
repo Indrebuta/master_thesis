@@ -1,0 +1,34 @@
+\section{Data}
+\subsection{Speeches}
+For this study I have collected 2486 speeches covering a time period from 2003 to 2021 (see Table \ref{tab:dates}). Speeches' data set was downloaded from the ECB website\footnote{\href{https://www.ecb.europa.eu/press/key/date/html/index.en.html}{See speeches data set here}}. Speeches are divided according to a policy makers role - President, Vice-President and the remaining executive Board Members. All the speeches given by the ECB's Presidents since the ECB's establishment is recorded under the President category, etc. Table %\ref{tab:speechspeak} 
+provides a summary of speakers that my speech data comprises.
+
+\input{tables/dates.tex}
+%\input{tables/speech_data.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Asset Prices}
+I look at bond yields, credit spread, equity returns, and inflation expectations for the Euro area. For these asset prices, I take daily data, which is necessary for matching these with the speech data. For the bond yields, I take triple AAA-rated Euro area government bonds which are readily available on the ECB’s website\footnote{\href{https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/euro_area_yield_curves/html/index.en.html}{See Euro area yield data here}} at the daily frequencies. The composition in terms of specific Euro area countries varies accordingly with the updated ratings by Fitch (see Table \ref{tab:ratings} in Appendix \ref{ap:data}). My yield data spans from 2004 to 2021 (see Table \ref{tab:dates}) and includes bonds with maturities of 3 months, 1-, 2-, 5-, 7-, 10-, 20-, 30-years.
+
+
+The Euro area credit spread is the difference between Italian and German sovereign bonds. I retrieve Italian and German government bond yields from the Refinitiv database. However, due to many missing observations I only have credit spread data spanning from 2012 to 2021 (see Table \ref{tab:dates}), with maturities of 3 months, 1-, 2-, 5-, 7-, 10-, 15-, 20- and 30-years.
+
+
+
+For the equity returns, I use the Euro Stoxx 50 index returns covering the period from 1997 to 2021 (see Table \ref{tab:dates}). This data is obtained from FactSet.
+
+
+I did not have access to the daily inflation expectations for the Euro area. For this reason, I take German 5-year breakeven inflation as a proxy for the Euro area’s inflation expectations. The German 5-year breakeven inflation is constructed as the difference between the 5-year nominal bond and an inflation-linked bond of the same maturity and is retrieved from Refinitiv. 5-year maturity is chosen due to its data completeness. My final inflation expectations data spans from 2010 to 2021 (see Table \ref{tab:dates}).
+
+
+%\begin{figure}
+%	\centering
+ 	%\fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+% 	\includegraphics[width=0.7\textwidth]{Figures/yield_curves.png}
+% 	\caption{Eurozone yield curves (spot rates) with maturities of 3 months, 1-, 2-, 5-, 7-, 10-, 20-, 30-years; daily frequency; September 2004 - June 2021; consisting of government  nominal bonds whose rating is triple A. (European Central Bank)}
+% 	\label{fig:fig1}
+% \end{figure}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Control Variables}
+To isolate the effect of the speeches, I control for the day-of-the-week effects, the monetary policy shocks, and the surprises of the various macroeconomic news as recommended by the literature (see, e.g., \cite{ehrmann2007,rozkrut2007}). I use the change in the Eonia rate as a measure of monetary policy shocks. I obtain daily data for the Eonia rate from the ECB website covering the period from 2003 to 2021 (see Table \ref{tab:dates}). To control for the macroeconomic surprises, I use the Euro area Citigroup Economic Surprise Index (CESI), which is the weighted moving average of all macroeconomic news surprises relevant to the Euro area. CESI is compiled by Bloomberg and a positive (negative) reading of the CESI suggests that economic news have on balance beaten (fall back) consensus expectations. I gathered CESI from Refinitiv. My Euro area CESI data covers the period from 2003 to 2021 (see Table \ref{tab:dates}).

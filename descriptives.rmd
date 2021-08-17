@@ -1,0 +1,581 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+## Importing Packages
+
+```{r}
+library(readxl)
+library(tidyverse)
+library(forecast)
+library(kableExtra)
+library(sjmisc)
+library(stargazer)
+library(urca)
+library(lubridate)
+library(ggthemes)
+```
+
+
+
+```{r}
+days_change <- 1
+#credit_spreads <- readRDS("credit_spreads.RDS")
+#credit_spreads
+
+```
+
+## Importing Data
+
+```{r}
+speaker_rank <- read_excel('Speaker rank.xlsx')
+
+df <- read_excel('sentiments_combined.xlsx') %>%
+  select(-starts_with("polarity"),-speaker_rank) %>%left_join(speaker_rank) %>%
+  rename(speaker_rank = role)
+
+```
+
+```{r}
+indicator <- names(df[,3:12])
+dictionary <- c("PR_MP","PR_MP","PR_MP","PR_EC","PR_EC","PR_EC","LM","LM","BN","BN")
+cat_df <- tibble(indicator,dictionary)
+cat_df
+```
+
+
+```{r}
+indicator <- names(df[,3:12])
+indicator
+```
+
+
+
+
+```{r}
+df_long <- df %>%
+  pivot_longer(cols = mp_acco:dovish_bn,
+               names_to = "indicator")%>%
+  left_join(cat_df,by="indicator") %>%
+  group_by(date,speakers,speaker_rank,dictionary,indicator) %>%
+  summarise(value = mean(value)) %>%
+  ungroup()
+
+df_long$indicator <- factor(df_long$indicator,levels = indicator, ordered = TRUE)
+df_long
+```
+
+## Analysing Sentiment Data
+
+```{r}
+df_long %>%
+  group_by(dictionary,indicator) %>%
+  summarise(count = quantile(value, c(0,0.25, 0.5, 0.75,1)),
+            quantile = c("min.","25th","median","75th","max.")) %>%
+  pivot_wider(names_from = quantile,
+              values_from = count) %>%
+  ungroup()%>%
+  kbl(caption = "Descriptive info per indicator",digits = 2, format = "latex") %>%
+  kable_classic( html_font = "Cambria") %>%
+  collapse_rows(columns = 1, valign = "top") %>%
+  save_kable("DescTableStroops.tex",float = FALSE)
+```
+
+
+```{r}
+df_long %>%
+  ggplot(aes(value,indicator)) + geom_boxplot(aes(fill = dictionary))
+```
+
+## Transforming Sentiment Data
+
+### Filtering Percentiles
+
+```{r}
+df_long_filtered <- df_long %>%
+  group_by(indicator) %>%
+  mutate(bottom_quartile = quantile(value,0.1)) %>%
+  filter(value > bottom_quartile) %>%
+  select(-c(bottom_quartile)) %>%
+  ungroup()
+
+df_long_filtered
+```
+
+```{r}
+p1 <- df_long_filtered %>%
+  group_by(dictionary,date,indicator) %>%
+  summarise(n = sum(value)) %>%
+  mutate(percentage = n / sum(n)) %>%
+  drop_na()%>%
+  ggplot(aes(date,percentage,fill = indicator)) + geom_area() + theme_few(base_family="Times New Roman") +
+  theme(text=element_text(size = 10), legend.text = element_text(size=8), legend.key.size = unit(0.4, "cm"))+
+  facet_wrap(~dictionary, scales = "free",nrow = 3) +
+  labs(x="Date", y="", fill="Tone:")+
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1))+
+  scale_fill_brewer(type = "seq", palette = "Spectral",name = "Tone", labels = c("PR Monetary Policy Dovish", "PR Monetary Policy Neutral", "PR Monetary Policy Hawkish", "PR Economic Outlook Negative", "PR Economic Neutral", "PR Economic Outlook Positive", "LM Positive", "LM Negative", "BN Monetary Policy Hawkish", "BN Monetary Policy Dovish"))
+p1
+ggsave(filename = "/Users/indre/Master_thesis/figures/sentiments.png", plot = p1, width = 0.8*8.3, height = 0.3*11.7, units = "in", device = "png", dpi = 300)
+```
+
+## Rank Breakdown
+
+```{r}
+ta1 <-df_long_filtered %>%
+  select(-dictionary) %>%
+  pivot_wider(names_from = indicator,
+              values_from = value) %>%
+  drop_na() %>%
+  group_by(speaker_rank) %>%
+  summarise(dovish = sum(dovish_bn,na.rm = T)/(sum(dovish_bn,na.rm = T) + sum(hawkish_bn,na.rm = T)),
+            hawkish = sum(hawkish_bn,na.rm = T)/(sum(dovish_bn,na.rm = T) + sum(hawkish_bn,na.rm = T)),
+            positive = sum(positive_lm,na.rm = T)/(sum(positive_lm,na.rm = T) + sum(negative_lm,na.rm = T)),
+            negative = sum(negative_lm,na.rm = T)/(sum(positive_lm,na.rm = T) + sum(negative_lm,na.rm = T)),
+            positive_ = sum(ec_posi,na.rm = T)/(sum(ec_posi,na.rm = T) + sum(ec_neut,na.rm = T) + sum(ec_nega,na.rm = T)),
+            neutral_ = sum(ec_neut,na.rm = T)/(sum(ec_posi,na.rm = T) + sum(ec_neut,na.rm = T) + sum(ec_nega,na.rm = T)),
+            negative_ = sum(ec_nega,na.rm = T)/(sum(ec_posi,na.rm = T) + sum(ec_neut,na.rm = T) + sum(ec_nega,na.rm = T)),
+            accomodative = sum(mp_acco,na.rm = T)/(sum(mp_acco,na.rm = T) + sum(mp_neut,na.rm = T) + sum(mp_rest,na.rm = T)),
+            neutral = sum(mp_neut,na.rm = T)/(sum(mp_acco,na.rm = T) + sum(mp_neut,na.rm = T) + sum(mp_rest,na.rm = T)),
+            restrictive = sum(mp_rest,na.rm = T)/(sum(mp_acco,na.rm = T) + sum(mp_neut,na.rm = T) + sum(mp_rest,na.rm = T))) %>%
+  kbl(digits = 3,booktabs = T, format = "latex") %>% 
+  kable_styling(position = "center") %>%
+  add_header_above(c(" " = 1, "BN" = 2, "LM" = 2, "PR Economic Outlook" = 3, "PR Monetary Policy" = 3)) %>% 
+  save_kable("speaker_sent.tex")
+
+ta1
+```
+
+
+
+### Computing Polarity
+
+```{r}
+df_long_polarity <- df_long_filtered %>%
+  pivot_wider(names_from = indicator,
+              values_from = value) %>%
+  group_by(date,speakers,speaker_rank) %>%
+  summarise(bn_polarity = (dovish_bn - hawkish_bn) / (hawkish_bn + dovish_bn),
+         lm_polarity = (positive_lm - negative_lm) / (positive_lm + negative_lm),
+         pr_ec_polarity = (ec_posi - ec_nega)/(ec_posi + ec_nega),
+         pr_mp_polarity = (mp_acco - mp_rest) / (mp_rest + mp_acco)) %>%
+  pivot_longer(ends_with("_polarity"),
+               names_to = "indicator",
+               values_to = "polarity",
+               names_pattern = "(.*)_polarity",
+               values_drop_na = T) %>%
+  ungroup()
+df_long_polarity
+```
+
+```{r}
+p2 <- df_long_polarity %>%
+  group_by(year = as.numeric(format(date, "%Y")),  indicator) %>%
+  summarise(polarity = mean(polarity)) %>%
+  ggplot(aes(x = year, y = polarity, color = indicator)) + geom_line() + geom_hline(yintercept = 0)+
+  theme_few(base_family="Times New Roman") +
+  theme(text=element_text(size = 10), legend.text = element_text(size=8), legend.key.size = unit(0.4, "cm"), panel.grid.minor = element_line(colour = "grey70", size = 0.09))+
+labs(x="Year", y="Average Yearly Tone", fill="Tone")+
+  scale_color_brewer(type = "seq", palette = "Spectral",name = "Tone:", labels = c("BN Monetary Policy", "LM", "PR Economic Outlook", "PR Monetary Policy"))+
+  
+  scale_y_continuous(breaks = seq(-0.7,0.8,0.1), labels = scales::number_format(accuracy = 0.01,
+                                 decimal.mark = '.'))+
+ scale_x_continuous(breaks = seq(1997,2021,3))
+p2
+ggsave(filename = "/Users/indre/Master_thesis/figures/tones.png", plot = p2, width = 0.8*8.3, height = 0.25*11.7, units = "in", device = "png", dpi = 300)
+```
+
+```{r}
+df_long_polarity_diff <- df_long_polarity %>%
+  group_by(indicator) %>%
+  mutate(polarity = polarity - lag(polarity)) %>%
+  ungroup()
+df_long_polarity_diff
+saveRDS(df_long_polarity_diff,"df_long_polarity_diff.RDS")
+```
+
+
+```{r}
+df_yields <- read_excel("main.xlsx", sheet = "Yields") #%>%
+  #mutate(across(-date, ~.x/100))
+df_yields
+```
+
+```{r}
+df_controls <- read_excel("main.xlsx", sheet = "Controls", col_types = c("date","numeric","numeric"))
+df_controls
+```
+
+
+```{r}
+df_equity <- read_excel("eurostoxx50.xlsx", sheet = "eurostoxx50") %>%
+  mutate(date = as.Date(date,format ="%m/%d/%Y")) %>%
+  rename(SR_EUROSTOXX = eurostoxx50)
+df_equity
+```
+
+
+```{r}
+df_breakeven <- read_excel("breakeven_inf.xlsx") %>% rename(SR_BREAKEVEN = "DE_5Y_Breakeven Inflation")
+df_breakeven
+```
+```{r}
+credit_spreads <- readRDS("credit_spreads.RDS")
+credit_spreads
+```
+
+
+
+```{r}
+
+dictnames <- as_labeller(
+     c("bn" = "BN:", "lm" = "LM:", "pr_ec" = "PR Economic Outlook:", "pr_mp"= "PR Monetary Policy:", "yield" = "Yield", "polarity" = "Tone"))
+
+p3 <- df_long_polarity %>%
+  left_join(df_yields, by = "date")%>%
+  left_join(df_controls, by = "date") %>%
+  drop_na() %>%
+  group_by(year = as.numeric(format(date, "%Y")),  indicator) %>%
+  summarise(across(polarity:SR_30Y, ~mean(.x))) %>%
+  ungroup()%>%
+  rename(lexicon = indicator) %>%
+  pivot_longer(SR_3M:SR_30Y, 
+               names_to = "indicator",
+               values_to = "yield") %>%
+  pivot_longer(c(polarity,yield), 
+               names_to = "indicator_type") %>%
+  ggplot(aes(x = year, y = value, color = indicator)) + geom_line() +
+  theme_few(base_family="Times New Roman") +
+  labs(x="", y="") +
+  scale_color_brewer(type = "seq", palette = "Spectral", name = "Yields:", breaks=c("SR_3M", "SR_1Y", "SR_2Y", "SR_5Y", "SR_7Y", "SR_10Y", "SR_20Y", "SR_30Y"), labels = c("3M", "1Y", "2Y", "5Y", "7Y", "10Y", "20Y", "30Y"))+
+  theme(text=element_text(size = 10), legend.text = element_text(size=8), legend.key.size = unit(0.4, "cm"))+ facet_wrap(vars(lexicon,indicator_type),
+                                                                                 scales = "free",
+                                                                                 ncol = 2, labeller = dictnames)
+
+p3
+ggsave(filename = "/Users/indre/Master_thesis/figures/tonesyields.png", plot = p3, width = 0.8*8.3, height = 0.5*11.7, units = "in", device = "png", dpi = 300)
+```
+```{r}
+
+dictinames <- as_labeller(
+     c("bn" = "BN:", "lm" = "LM:", "pr_ec" = "PR Economic Outlook:", "pr_mp"= "PR Monetary Policy:", "return" = "Return", "polarity" = "Tone"))
+
+p4 <- df_long_polarity %>%
+  left_join(df_equity, by = "date")%>%
+  left_join(df_controls, by = "date") %>%
+  drop_na() %>%
+  group_by(year = as.numeric(format(date, "%Y")),  indicator) %>%
+  summarise(across(polarity:SR_EUROSTOXX, ~mean(.x))) %>%
+  ungroup()%>%
+  rename(lexicon = indicator) %>%
+  pivot_longer(SR_EUROSTOXX, 
+               names_to = "indicator",
+               values_to = "return") %>%
+  pivot_longer(c(polarity,return), 
+               names_to = "indicator_type") %>%
+  ggplot(aes(x = year, y = value, color = indicator)) + geom_line() +
+  facet_wrap(vars(lexicon,indicator_type),
+                                                                                 scales = "free",
+                                                                                 ncol = 2, labeller = dictinames)+
+  theme_few(base_family="Times New Roman") +
+  labs(x="", y="") +
+  scale_color_brewer(type = "seq", palette = "Spectral", name="Equity Proxy:", labels ="Euro Stoxx 50")
+  theme(text=element_text(size = 10), legend.text = element_text(size=8), legend.key.size = unit(0.4, "cm"))
+
+p4
+ggsave(filename = "/Users/indre/Master_thesis/figures/toneseurostoxx.png", plot = p4, width = 0.8*8.3, height = 0.5*11.7, units = "in", device = "png", dpi = 300)
+```
+```{r}
+
+dictionames <- as_labeller(
+     c("bn" = "BN:", "lm" = "LM:", "pr_ec" = "PR Economic Outlook:", "pr_mp"= "PR Monetary Policy:", "inflation" = "Break-even Inflation", "polarity" = "Tone"))
+
+
+
+p5 <- df_long_polarity %>%
+  left_join(df_breakeven, by = "date")%>%
+  left_join(df_controls, by = "date") %>%
+  drop_na() %>%
+  group_by(year = as.numeric(format(date, "%Y")),  indicator) %>%
+  summarise(across(polarity:SR_BREAKEVEN, ~mean(.x))) %>%
+  ungroup()%>%
+  rename(lexicon = indicator) %>%
+  pivot_longer(SR_BREAKEVEN, 
+               names_to = "indicator",
+               values_to = "inflation") %>%
+  pivot_longer(c(polarity,inflation), 
+               names_to = "indicator_type") %>%
+  mutate(indicator_type = factor(indicator_type, levels = c("polarity","inflation"),ordered = T)) %>%
+  ggplot(aes(x = year, y = value, color = indicator)) + geom_line() +
+  facet_wrap(vars(lexicon,indicator_type),scales = "free",ncol = 2, labeller = dictionames)+
+  theme_few(base_family="Times New Roman") +
+  labs(x="", y="") +
+  scale_color_brewer(type = "seq", palette = "Spectral", name="Inflation Expectation Proxy:", labels ="Break-even Inflation")
+  theme(text=element_text(size = 10), legend.text = element_text(size=8), legend.key.size = unit(0.4, "cm"))
+
+p5
+ggsave(filename = "/Users/indre/Master_thesis/figures/tonesinflation.png", plot = p5, width = 0.8*8.3, height = 0.5*11.7, units = "in", device = "png", dpi = 300)
+```
+
+```{r}
+test_stationarity <- function(x,type,return_value) {
+  test <- ur.df(x,type = type)
+  y <- 0
+  if(return_value == 'cval'){y <- test@cval[1,2]} 
+  else if (return_value == 'tval'){y <-test@teststat[1] }
+  else { y <- (abs(test@cval[1,2]) < abs(test@teststat[1]))}
+  return(y)
+}
+```
+
+
+```{r}
+df_yields
+```
+```{r}
+dependents <- c("SR_3M","SR_1Y","SR_2Y","SR_5Y","SR_7Y","SR_10Y","SR_20Y","SR_30Y","eurostoxx","breakeven")
+```
+
+
+
+```{r}
+df_yields %>%
+  pivot_longer(starts_with("SR_"), 
+               names_to = "maturity",
+               values_to = "yields") %>%
+  ggplot(aes(x = date, y = yields )) + geom_line()+
+  facet_wrap(~maturity)
+```
+
+```{r}
+df_yields %>%
+  pivot_longer(starts_with("SR_"), 
+               names_to = "maturity",
+               values_to = "yields") %>%
+  group_by(maturity) %>%
+  summarize(critical_value = test_stationarity(yields,'none','cval'),
+            test_value = test_stationarity(yields,'none','tval'),
+            Stationary = test_stationarity(yields,'none','test')) %>%
+  kbl() %>%
+  kable_classic(full_width = F, html_font = "Cambria") 
+  
+```
+
+
+```{r}
+df_yields %>%
+  pivot_longer(starts_with("SR_"), 
+               names_to = "maturity",
+               values_to = "yield") %>%
+  group_by(maturity) %>%
+  mutate(yield_diff = yield - lag(yield,days_change)) %>%
+  drop_na(yield_diff) %>%
+  summarize(critical_value = test_stationarity(yield_diff,'none','cval'),
+            test_value = test_stationarity(yield_diff,'none','tval'),
+            Stationary = test_stationarity(yield_diff,'none','test')) %>%
+  kbl() %>%
+  kable_classic(full_width = F, html_font = "Cambria") 
+  
+```
+```{r}
+df_yields_long <- df_yields %>%
+  pivot_longer(starts_with("SR_"), 
+               names_to = "indicator",
+               values_to = "dependent") %>%
+  group_by(indicator) %>%
+  mutate(dependent = dependent - lag(dependent,days_change)) %>%
+  mutate(dependent_l1 = lag(dependent,1),
+         dependent_l2 = lag(dependent,2)) %>%
+    drop_na() 
+df_yields_long
+```
+
+
+
+```{r}
+df_equity %>%
+  ggplot(aes(x = date, y = SR_EUROSTOXX)) + geom_line()
+```
+
+```{r}
+ur.df(df_equity$SR_EUROSTOXX,type = "none") %>%
+  summary()
+```
+
+
+
+```{r}
+df_equity_long <- df_equity %>%
+  rename(dependent = SR_EUROSTOXX) %>%
+  mutate(dependent = dependent - lag(dependent,days_change)) %>%
+  mutate(dependent_l1 = lag(dependent,1),
+         dependent_l2 = lag(dependent,2),
+         indicator = "eurostoxx") %>%
+    drop_na() 
+df_equity_long
+```
+
+```{r}
+df_breakeven %>%
+  arrange(date) %>%
+  ggplot(aes(x = date, y = SR_BREAKEVEN)) + geom_line()
+```
+
+
+```{r}
+ur.df(df_breakeven$SR_BREAKEVEN,type = "none") %>%
+  summary()
+```
+
+```{r}
+df_breakeven_long <- df_breakeven %>%
+  rename(dependent = SR_BREAKEVEN) %>%
+  mutate(dependent = dependent - lag(dependent,days_change)) %>%
+  mutate(dependent_l1 = lag(dependent,1),
+         dependent_l2 = lag(dependent,2),
+         indicator = "breakeven") %>%
+    drop_na() 
+df_breakeven_long
+```
+
+### Append all dependent variables
+
+
+
+```{r}
+df_dependents <- bind_rows(df_yields_long,df_equity_long,df_breakeven_long)
+df_dependents
+```
+```{r}
+df_dependents %>%
+  group_by(indicator) %>%
+  summarise(min_date = min(date),
+         max_date = max(date))
+```
+
+
+```{r}
+df_controls %>%
+  pivot_longer(!date,
+               names_to = "indicator")%>%
+  ggplot(aes(x = date, y = value)) + geom_line() + facet_wrap(~indicator, scales = "free")
+```
+
+```{r}
+df_controls %>%
+  pivot_longer(!date, 
+               names_to = "indicator") %>%
+  drop_na() %>%
+  group_by(indicator) %>%
+  summarize(critical_value = test_stationarity(value,'none','cval'),
+            test_value = test_stationarity(value,'none','tval'),
+            Stationary = test_stationarity(value,'none','test')) %>%
+  kbl() %>%
+  kable_classic(full_width = F, html_font = "Cambria") 
+  
+```
+
+```{r}
+df_controls_lag <- df_controls %>%
+  mutate(eonia = eonia - lag(eonia,days_change) ) %>%
+  mutate(eonia_l1 = lag(eonia),
+         cesi_eur_l1 = lag(cesi_eur)) %>%
+  drop_na()
+df_controls_lag
+
+saveRDS(df_controls_lag,"df_controls_lag.RDS")
+```
+
+```{r}
+crisis_dummies <- read_excel("DUMMIES.xlsx")
+crisis_dummies
+```
+
+# Regression output
+
+```{r}
+df_regression <- df_long_polarity_diff %>%
+  rename(dictionary = indicator) %>%
+  left_join(df_dependents, by = "date") %>%
+  left_join(df_controls_lag, by = "date") %>% 
+  left_join(crisis_dummies, by = "date") %>% 
+  select(-speakers) %>%
+  drop_na() 
+df_regression
+```
+
+```{r}
+df_regression %>%
+  filter(indicator == "breakeven")
+```
+
+
+
+
+
+```{r}
+df_regression$indicator <- factor(df_regression$indicator, levels = dependents, ordered = T)
+
+df_lm <-df_regression %>%
+  mutate(weekday = wday(date,label = TRUE,abbr = TRUE)) %>%
+  group_by(dictionary,indicator) %>%
+  do(model = lm(dependent ~ polarity + dependent_l1 + dependent_l2 + 
+                eonia +eonia_l1 +cesi_eur+ cesi_eur_l1 + weekday + 
+                financial_crisis_dummy*polarity + covid_crisis_dummy*polarity, 
+        data = .)) 
+df_lm
+```
+
+pr_ec
+pr_mp
+bn
+lm
+
+
+```{r}
+df_lm %>%
+  filter(dictionary == "bn") %>%
+  stargazer(.$model[1],.$model[2],
+            .$model[3],.$model[4],
+            .$model[5],.$model[6],
+            .$model[7],.$model[8],
+            .$model[9],.$model[10],type = "latex",out = "/Users/indre/Master_thesis/tables/yields/all/bn.tex",
+            omit = "weekday",omit.stat = c("f"),df = F, column.labels = c("3M","1Y",
+                                                                                 "2Y","5Y",
+                                                                                 "7Y","10Y",
+                                                                                 "20Y","30Y",
+                                                                                 "Eurostoxx","Breakeven-inflation"))
+```
+
+
+
+```{r}
+read_excel("available_dates.xlsx") %>%
+  kbl(booktabs = T, format = "latex") %>%
+  kable_styling(position = "center") %>%
+   save_kable("/Users/indre/Master_thesis/tables/dates.tex")
+  
+```
+
+
+
+
+```{r}
+df_regression %>%
+  filter(speaker_rank == "President") %>%
+  mutate(weekday = wday(date,label = TRUE,abbr = TRUE)) %>%
+  group_by(dictionary,indicator) %>%
+  do(broom::tidy(lm(dependent ~ polarity + dependent_l1 + dependent_l2 + 
+          eonia +eonia_l1 +cesi_eur+ cesi_eur_l1 + weekday , 
+        data = .))) %>%
+  pivot_wider(names_from = dictionary,
+              values_from = estimate:p.value) %>%
+  filter(term == "polarity") %>%
+  select(indicator,estimate_bn,std.error_bn,statistic_bn,p.value_bn,
+         estimate_lm,std.error_lm,statistic_lm,p.value_lm,
+         estimate_pr_ec,std.error_pr_ec,statistic_pr_ec,p.value_pr_ec,
+         estimate_pr_mp,std.error_pr_mp,statistic_pr_mp,p.value_pr_mp) %>%
+  kbl(digits = 3) %>%
+  kable_classic(full_width = F, html_font = "Cambria") %>%
+  add_header_above(c(" " = 1, "BN" = 4, "LM" = 4, "PR (EC)" = 4, "PR (MP)" = 4))
+```
+

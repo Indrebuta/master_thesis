@@ -1,0 +1,1900 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{andersson2006}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d8acfa359956b43d1be26a7869343adc}{%
+           family={Andersson},
+           familyi={A\bibinitperiod},
+           given={Malin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54b862ae25907ceca495543696718857}{%
+           family={Dillén},
+           familyi={D\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cae112d84429c86ff6da9004d3f08fee}{%
+           family={Sellin},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{69986a5edd6358bae7c51ad1b9a076b2}
+      \strng{fullhash}{29c92f4eede906c410021454d321245f}
+      \strng{bibnamehash}{29c92f4eede906c410021454d321245f}
+      \strng{authorbibnamehash}{29c92f4eede906c410021454d321245f}
+      \strng{authornamehash}{69986a5edd6358bae7c51ad1b9a076b2}
+      \strng{authorfullhash}{29c92f4eede906c410021454d321245f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper examines how various monetary policy signals such as repo rate changes, inflation reports, speeches, and minutes from monetary policy meetings affect the term structure of interest rates. We find that unexpected movements in the short end of the yield curve are mainly driven by unexpected changes in the repo rate. However, published inflation reports and speeches also have some impact on short rates. Speeches are found to be a more important determinant for the longer end of the term structure. Our conclusion is that central bank communication is an essential part of the conduct of monetary policy.}
+      \field{day}{1}
+      \field{issn}{0304-3932}
+      \field{journaltitle}{Journal of Monetary Economics}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{8}
+      \field{shortjournal}{Journal of Monetary Economics}
+      \field{title}{Monetary Policy Signaling and Movements in the Term Structure of Interest Rates}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{53}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1815\bibrangedash 1855}
+      \range{pages}{41}
+      \verb{doi}
+      \verb 10.1016/j.jmoneco.2006.06.002
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304393206001346
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304393206001346
+      \endverb
+      \keyw{Central bank communication,Monetary policy signaling,Term structure of interest rates}
+    \endentry
+    \entry{apergis2019}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=76888d012d61fae50ae3acc53e39ca28}{%
+           family={Apergis},
+           familyi={A\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4713eb20aab47fb6303c0267cf2cbab8}{%
+           family={Pragidis},
+           familyi={P\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7273b1b1ebbb24157147669c2016e06b}
+      \strng{fullhash}{7273b1b1ebbb24157147669c2016e06b}
+      \strng{bibnamehash}{7273b1b1ebbb24157147669c2016e06b}
+      \strng{authorbibnamehash}{7273b1b1ebbb24157147669c2016e06b}
+      \strng{authornamehash}{7273b1b1ebbb24157147669c2016e06b}
+      \strng{authorfullhash}{7273b1b1ebbb24157147669c2016e06b}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper examines the link between changes in the sentiment tone with respect to the European Central Bank’s (ECB) announcements and stock returns. The analysis constructs a new index that describes the tone of the sentiment derived from these announcements, spanning the period January 2002 to June 2016. The novelty of this work relies on the development of a unique sentiment index associated with the messages conveyed by the ECB’s activities and the effect of this index on both the mean and the volatility of certain major international stock markets. In this context, the sentiment index is present in both the conditional mean and the volatility equations. The findings indicate a significant impact on both the mean and the volatility of returns, whereas the news sentiment/stock returns association increases in strength during the crisis period. The findings survive a robustness check based on the characteristics of the ECB governor’s personality.}
+      \field{day}{1}
+      \field{issn}{1573-966X}
+      \field{journaltitle}{International Advances in Economic Research}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shortjournal}{Int Adv Econ Res}
+      \field{shorttitle}{Stock {{Price Reactions}} to {{Wire News}} from the {{European Central Bank}}}
+      \field{title}{Stock {{Price Reactions}} to {{Wire News}} from the {{European Central Bank}}: {{Evidence}} from {{Changes}} in the {{Sentiment Tone}} and {{International Market Indexes}}}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{25}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{91\bibrangedash 112}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/s11294-019-09721-y
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/YHY7JPXB/Apergis and Pragidis - 2019 - Stock Price Reactions to Wire News from the Europe.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11294-019-09721-y
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11294-019-09721-y
+      \endverb
+    \endentry
+    \entry{arnold2020}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8d50214b0ff434dacee365a3619cf800}{%
+           family={Arnold},
+           familyi={A\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8d50214b0ff434dacee365a3619cf800}
+      \strng{fullhash}{8d50214b0ff434dacee365a3619cf800}
+      \strng{bibnamehash}{8d50214b0ff434dacee365a3619cf800}
+      \strng{authorbibnamehash}{8d50214b0ff434dacee365a3619cf800}
+      \strng{authornamehash}{8d50214b0ff434dacee365a3619cf800}
+      \strng{authorfullhash}{8d50214b0ff434dacee365a3619cf800}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Central bank chief’s comments last week left Italian bonds reeling}
+      \field{day}{15}
+      \field{entrysubtype}{newspaper}
+      \field{journaltitle}{Financial Times}
+      \field{month}{3}
+      \field{title}{Christine {{Lagarde}} Apologises for Botched Communication of {{ECB}} Strategy}
+      \field{urlday}{9}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/UYKJC2NV/ce39716e-66c0-11ea-a3c9-1fe6fedcca75.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ft.com/content/ce39716e-66c0-11ea-a3c9-1fe6fedcca75
+      \endverb
+      \verb{url}
+      \verb https://www.ft.com/content/ce39716e-66c0-11ea-a3c9-1fe6fedcca75
+      \endverb
+    \endentry
+    \entry{europeancentralbank2005}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4e9fffc9229d54983a35e60a61cb5da4}{%
+           family={Bank},
+           familyi={B\bibinitperiod},
+           given={European\bibnamedelima Central},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {European Central Bank}%
+      }
+      \strng{namehash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \strng{fullhash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \strng{bibnamehash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \strng{authorbibnamehash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \strng{authornamehash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \strng{authorfullhash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Monetary Policy and 'Credible Alertness'}
+      \field{day}{27}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{title}{Monetary {{Policy}} and '{{Credible Alertness}}'}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/U5DIJCAF/sp050827.en.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ecb.europa.eu/press/key/date/2005/html/sp050827.en.html
+      \endverb
+      \verb{url}
+      \verb https://www.ecb.europa.eu/press/key/date/2005/html/sp050827.en.html
+      \endverb
+    \endentry
+    \entry{europeancentralbank2021}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4e9fffc9229d54983a35e60a61cb5da4}{%
+           family={Bank},
+           familyi={B\bibinitperiod},
+           given={European\bibnamedelima Central},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {European Central Bank}%
+      }
+      \strng{namehash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \strng{fullhash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \strng{bibnamehash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \strng{authorbibnamehash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \strng{authornamehash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \strng{authorfullhash}{4e9fffc9229d54983a35e60a61cb5da4}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Monetary policy communication and the strategy review}
+      \field{day}{5}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{title}{Monetary Policy Communication and the Strategy Review}
+      \field{urlday}{17}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/NF3CWPYZ/monpol-communication.en.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ecb.europa.eu/home/search/review/html/monpol-communication.en.html
+      \endverb
+      \verb{url}
+      \verb https://www.ecb.europa.eu/home/search/review/html/monpol-communication.en.html
+      \endverb
+    \endentry
+    \entry{baranowski2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fc61b9bcb412b7829ab1047f15438092}{%
+           family={Baranowski},
+           familyi={B\bibinitperiod},
+           given={Pawel},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b8edec893f2b34852d906bce179ad9ff}{%
+           family={Bennani},
+           familyi={B\bibinitperiod},
+           given={Hamza},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15464a6747cd26e4ff790a7d3e7213ed}{%
+           family={Doryń},
+           familyi={D\bibinitperiod},
+           given={Wirginia},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{57720c386e46322186af777a068bfa9b}
+      \strng{fullhash}{68235b54d665b55ed963bdf0da8fdb99}
+      \strng{bibnamehash}{68235b54d665b55ed963bdf0da8fdb99}
+      \strng{authorbibnamehash}{68235b54d665b55ed963bdf0da8fdb99}
+      \strng{authornamehash}{57720c386e46322186af777a068bfa9b}
+      \strng{authorfullhash}{68235b54d665b55ed963bdf0da8fdb99}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In this paper, we examine whether a tone shock derived from European Central Bank communication helps predict ECB monetary policy decisions. To this purpose, we first use a bag-of-words approach and several dictionaries on the ECB's Introductory Statements to derive a measure of tone. Next, we orthogonalise the tone measure on the latest data available to market participants to compute the tone shock. Finally, we relate the tone shock to future ECB monetary policy decisions. We find that the tone shock is significantly and positively related to future ECB monetary policy decisions, even when controlling for market expectations of monetary policy and the Governing Council's inter-meeting communication. Further extensions show that the predictive ability of the tone shock is robust to (i) the normalization of the tone measure, (ii) alternative market expectations of monetary policy, and (iii) the horizon of macroeconomic variables used in the Taylor-type monetary policy rule. These findings highlight an additional channel through which ECB communication improves monetary policy predictability, suggesting that the ECB may have private information that it communicates through its Introductory Statements.}
+      \field{day}{1}
+      \field{issn}{0176-2680}
+      \field{journaltitle}{European Journal of Political Economy}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{shortjournal}{European Journal of Political Economy}
+      \field{shorttitle}{Do the {{ECB}}'s Introductory Statements Help Predict Monetary Policy?}
+      \field{title}{Do the {{ECB}}'s Introductory Statements Help Predict Monetary Policy? {{Evidence}} from a Tone Analysis}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{66}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{101964}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ejpoleco.2020.101964
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0176268020301129
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0176268020301129
+      \endverb
+      \keyw{Central bank communication,European central bank,Taylor rule,Tone}
+    \endentry
+    \entry{beaupain2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ee18f7c877496d4dcb44bc2c8955f343}{%
+           family={Beaupain},
+           familyi={B\bibinitperiod},
+           given={Renaud},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ba6939cbc5f3bf9b4a6758d57b2d7d2}{%
+           family={Girard},
+           familyi={G\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fce0ef6a5af1568eae313a2bc74cd89e}
+      \strng{fullhash}{fce0ef6a5af1568eae313a2bc74cd89e}
+      \strng{bibnamehash}{fce0ef6a5af1568eae313a2bc74cd89e}
+      \strng{authorbibnamehash}{fce0ef6a5af1568eae313a2bc74cd89e}
+      \strng{authornamehash}{fce0ef6a5af1568eae313a2bc74cd89e}
+      \strng{authorfullhash}{fce0ef6a5af1568eae313a2bc74cd89e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper examines whether the communication of a central bank can complement its actions to coordinate market expectations and ultimately steer long-term interest rates. More specifically, we propose a measure of common understanding between the central bank and market participants and we assess how it alters the sovereign yield spreads of a sample of core and distressed countries in the euro area. We build a latent semantic analysis of the official transcripts of the press conferences that the European Central Bank holds at the end of each reserve maintenance period. We report empirical evidence supporting the importance of communication for implementing monetary policy decisions. Specifically, we show that the communication of the ECB was altered by the announcement of unconventional measures and that it significantly impacted sovereign spreads in the euro area.}
+      \field{day}{1}
+      \field{issn}{0264-9993}
+      \field{journaltitle}{Economic Modelling}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{shortjournal}{Economic Modelling}
+      \field{title}{The Value of Understanding Central Bank Communication}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{85}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{154\bibrangedash 165}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.econmod.2019.05.013
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S026499931930361X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S026499931930361X
+      \endverb
+      \keyw{Central bank communication,Latent semantic analysis,Monetary policy,Sovereign bond yield spreads}
+    \endentry
+    \entry{bennani2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b8edec893f2b34852d906bce179ad9ff}{%
+           family={Bennani},
+           familyi={B\bibinitperiod},
+           given={Hamza},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=768d3e6736e3722ca170cbc84ebeac5e}{%
+           family={Neuenkirch},
+           familyi={N\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{ea828bd662ce44497ca4717c93c25457}
+      \strng{fullhash}{ea828bd662ce44497ca4717c93c25457}
+      \strng{bibnamehash}{ea828bd662ce44497ca4717c93c25457}
+      \strng{authorbibnamehash}{ea828bd662ce44497ca4717c93c25457}
+      \strng{authornamehash}{ea828bd662ce44497ca4717c93c25457}
+      \strng{authorfullhash}{ea828bd662ce44497ca4717c93c25457}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Speeches are an important vehicle for central bankers to convey individual views on the preferred policy stance. In this article, we employ an automated text linguistic approach to create an indicator that measures the tone of the 1,618 speeches delivered by members of the Governing Council (GC) during the period 1999M1–2014M4. We then relate this variable to euro area and national macroeconomic forecasts. Our key findings are as follows. First, inflation and growth expectations have a positive and significant impact on the hawkishness of a speech. Second, different growth expectations across the euro area and different preferences significantly explain discrepancies across speakers. Third, the voiced preferences of presidents of the national central banks (NCBs) largely coincide with the level of independence their central banks had at the time of the Maastricht Treaty. However, in general, there are not much differences between members of the Executive Board and the NCB presidents. Fourth, we find some evidence that central bankers adjust the gist of their speeches depending on whether they talk at home or abroad and before or after a GC meeting. Finally, differences in central banker preferences are the key source of variation in their speeches before the financial crisis.}
+      \field{annotation}{\_eprint: https://doi.org/10.1080/00036846.2016.1210782}
+      \field{day}{3}
+      \field{issn}{0003-6846}
+      \field{journaltitle}{Applied Economics}
+      \field{month}{3}
+      \field{number}{11}
+      \field{shorttitle}{The (Home) Bias of {{European}} Central Bankers}
+      \field{title}{The (Home) Bias of {{European}} Central Bankers: New Evidence Based on Speeches}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{49}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1114\bibrangedash 1131}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1080/00036846.2016.1210782
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/FV5HJ43Y/Bennani and Neuenkirch - 2017 - The (home) bias of European central bankers new e.pdf;/Users/indre/Zotero/storage/XE6WWTCV/00036846.2016.html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/00036846.2016.1210782
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/00036846.2016.1210782
+      \endverb
+      \keyw{Central bank communication,E52,E58.,European central bank,Governing Council,monetary policy,national interests,speeches}
+    \endentry
+    \entry{bernoth2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ea86988186a99c0d0344a1c1173baccf}{%
+           family={Bernoth},
+           familyi={B\bibinitperiod},
+           given={Kerstin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ca913fa490cae71327fa5ac7ac5426d}{%
+           family={Dany-Knedlik},
+           familyi={D\bibinithyphendelim K\bibinitperiod},
+           given={Geraldine},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4049b74e811d84021c3c3b64babfb333}
+      \strng{fullhash}{4049b74e811d84021c3c3b64babfb333}
+      \strng{bibnamehash}{4049b74e811d84021c3c3b64babfb333}
+      \strng{authorbibnamehash}{4049b74e811d84021c3c3b64babfb333}
+      \strng{authornamehash}{4049b74e811d84021c3c3b64babfb333}
+      \strng{authorfullhash}{4049b74e811d84021c3c3b64babfb333}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Given its central role in public accountability and in the formation of expectations, it is important to reflect on ways to improve the ECB’s communication policy. Communication should not generally strive for maximum transparency. The optimum degree of transparency varies between different aspects of monetary policy and banking supervision. Although the ECB already communicates very openly with the public and achieves a very high level of transparency in all aspects, we see room for improvement in its communication strategy in several respects.}
+      \field{journaltitle}{Monetary Dialogue Papers, European Parliament}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{title}{The {{ECB}}’s {{Communication Strategy}}: {{Limits}} and {{Challenges After}} the {{Financial Crisis}}}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{33}
+      \range{pages}{1}
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/Q6LS5B5H/Bernoth and Dany-Knedlik - The ECB’s Communication Strategy Limits and Chall.pdf
+      \endverb
+    \endentry
+    \entry{blinder2008}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=c747dbf34ee9a12f5efc12158d6650c7}{%
+           family={Blinder},
+           familyi={B\bibinitperiod},
+           given={Alan\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51ac5432d6fc0c5b9f68aff37d6feb33}{%
+           family={Ehrmann},
+           familyi={E\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25dfeefc5dc50ca621ee5cb966d86e10}{%
+           family={Fratzscher},
+           familyi={F\bibinitperiod},
+           given={Marcel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7955551bb11e9066de797d025a9b9a3f}{%
+           family={De\bibnamedelima Haan},
+           familyi={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e2113934755a17be6fb3fe5fd762a5b}{%
+           family={Jansen},
+           familyi={J\bibinitperiod},
+           given={David-Jan},
+           giveni={D\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ab522a02c79baade874ae544769d7491}
+      \strng{fullhash}{e0208e2c6d59bc70e786b5db2891681d}
+      \strng{bibnamehash}{e0208e2c6d59bc70e786b5db2891681d}
+      \strng{authorbibnamehash}{e0208e2c6d59bc70e786b5db2891681d}
+      \strng{authornamehash}{ab522a02c79baade874ae544769d7491}
+      \strng{authorfullhash}{e0208e2c6d59bc70e786b5db2891681d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Over the last two decades, communication has become an increasingly important aspect of monetary policy. These real-world developments have spawned a huge new scholarly literature on central bank communication—mostly empirical, and almost all of it written in this decade. We survey this ever-growing literature. The evidence suggests that communication can be an important and powerful part of the central bank’s toolkit since it has the ability to move financial markets, to enhance the predictability of monetary policy decisions, and potentially to help achieve central banks’ macroeconomic objectives. However, the large variation in communication strategies across central banks suggests that a consensus has yet to emerge on what constitutes an optimal communication strategy.}
+      \field{issn}{0022-0515}
+      \field{journaltitle}{Journal of Economic Literature}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{4}
+      \field{shorttitle}{Central {{Bank Communication}} and {{Monetary Policy}}}
+      \field{title}{Central {{Bank Communication}} and {{Monetary Policy}}: {{A Survey}} of {{Theory}} and {{Evidence}}}
+      \field{urlday}{16}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{46}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{910\bibrangedash 945}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1257/jel.46.4.910
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/LZVRW6YV/Blinder et al. - 2008 - Central Bank Communication and Monetary Policy A .pdf;/Users/indre/Zotero/storage/WRCF4BXQ/articles.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/jel.46.4.910
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/jel.46.4.910
+      \endverb
+      \keyw{Central Banks and Their Policies,Monetary Policy}
+    \endentry
+    \entry{brand2010}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5e0ab468617ac47bd1ae57aa76d24f3f}{%
+           family={Brand},
+           familyi={B\bibinitperiod},
+           given={Claus},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ff5fc3c8b39d1e4bad10f286c0c8fca}{%
+           family={Buncic},
+           familyi={B\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5257581f2fff1c0b0b7c28913a3e1848}{%
+           family={Turunen},
+           familyi={T\bibinitperiod},
+           given={Jarkko},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c34696f17a85ca3496ae0bdfdffcd825}
+      \strng{fullhash}{630f73421e2d5e50811e4635a12564af}
+      \strng{bibnamehash}{630f73421e2d5e50811e4635a12564af}
+      \strng{authorbibnamehash}{630f73421e2d5e50811e4635a12564af}
+      \strng{authornamehash}{c34696f17a85ca3496ae0bdfdffcd825}
+      \strng{authorfullhash}{630f73421e2d5e50811e4635a12564af}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We use intraday changes in money market rates to construct indicators of news about monetary policy stemming separately from policy decisions and from official communication of the European Central Bank, and study their impact on the yield curve. We show that communication may lead to substantial revisions in expectations of monetary policy and, at the same time, exert a significant impact on interest rates at longer maturities. Thereby, the maturity response pattern to communication is hump-shaped, whereas that to policy decisions is downward-sloping.}
+      \field{day}{1}
+      \field{issn}{1542-4766}
+      \field{journaltitle}{Journal of the European Economic Association}
+      \field{month}{12}
+      \field{number}{6}
+      \field{shortjournal}{Journal of the European Economic Association}
+      \field{title}{The {{Impact}} of {{Ecb Monetary Policy Decisions}} and {{Communication}} on the {{Yield Curve}}}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{8}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1266\bibrangedash 1298}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1111/j.1542-4774.2010.tb00555.x
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/WYUEFP5B/Brand et al. - 2010 - The Impact of Ecb Monetary Policy Decisions and Co.pdf;/Users/indre/Zotero/storage/L2HUWLSI/2295955.html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/j.1542-4774.2010.tb00555.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/j.1542-4774.2010.tb00555.x
+      \endverb
+    \endentry
+    \entry{coenen2017}{report}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=1cf64d91b4a5d5934e5fa150f8e45209}{%
+           family={Coenen},
+           familyi={C\bibinitperiod},
+           given={Günter},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51ac5432d6fc0c5b9f68aff37d6feb33}{%
+           family={Ehrmann},
+           familyi={E\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=302160b4d99d144712174ffd39e8b695}{%
+           family={Gaballo},
+           familyi={G\bibinitperiod},
+           given={Gaetano},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4af7bd0275f3f18c4dbcdd1405e86a77}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1deb73212e18c9eb0cae89234d384230}{%
+           family={Nakov},
+           familyi={N\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ab9abe835b603442ba547e129b0b717}{%
+           family={Nardelli},
+           familyi={N\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=daf36b12b55fd816da7686caea3202f3}{%
+           family={Persson},
+           familyi={P\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4934bb64886252756e13f6bffb958d75}{%
+           family={Strasser},
+           familyi={S\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Social Science Research Network}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{456592050ad2c6b2e9d17f9f63dd6851}
+      \strng{fullhash}{7fc841a02268ef82d4e0ac096d526816}
+      \strng{bibnamehash}{7fc841a02268ef82d4e0ac096d526816}
+      \strng{authorbibnamehash}{7fc841a02268ef82d4e0ac096d526816}
+      \strng{authornamehash}{456592050ad2c6b2e9d17f9f63dd6851}
+      \strng{authorfullhash}{7fc841a02268ef82d4e0ac096d526816}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Monetary policy communication is particularly important during unconventional times, because high uncertainty about the economy, the introduction of new policy tools and possible limits to the central bank’s toolkit could hamper the predictability of policy actions. We study how monetary policy communication should and has worked under such circumstances. Our main results relate to announcements of asset purchase programmes and the use of forward guidance. We show that announcements of asset purchase programmes have lowered market uncertainty, particularly when accompanied by a contextual release of implementation details such as the envisaged size of the programme. We also show that forward guidance reduces uncertainty more effectively when it is state‐contingent or when it provides guidance about a long horizon than when it is open‐ended or covers only a short horizon, and that the credibility of forward guidance is strengthened if the central bank also has embarked on an asset purchase programme.}
+      \field{day}{21}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{ID 2993893}
+      \field{title}{Communication of {{Monetary Policy}} in {{Unconventional Times}}}
+      \field{type}{SSRN Scholarly Paper}
+      \field{urlday}{17}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/4RFHFPFE/papers.html
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=2993893
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=2993893
+      \endverb
+      \keyw{asset purchase programme,central bank communication,forward guidance,unconventional monetary policy}
+    \endentry
+    \entry{connolly2004}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d69c3216e7936d46ca4b9a7e301d05f5}{%
+           family={Connolly},
+           familyi={C\bibinitperiod},
+           given={Ellis},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cbd94a0a36ce04855a0a8be20c42ff4}{%
+           family={Kohler},
+           familyi={K\bibinitperiod},
+           given={Marion},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Reserve Bank of Australia}%
+      }
+      \strng{namehash}{2baaa58f0a3953ffb84e69c76ac4b607}
+      \strng{fullhash}{2baaa58f0a3953ffb84e69c76ac4b607}
+      \strng{bibnamehash}{2baaa58f0a3953ffb84e69c76ac4b607}
+      \strng{authorbibnamehash}{2baaa58f0a3953ffb84e69c76ac4b607}
+      \strng{authornamehash}{2baaa58f0a3953ffb84e69c76ac4b607}
+      \strng{authorfullhash}{2baaa58f0a3953ffb84e69c76ac4b607}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{annotation}{Last Modified: 2020-07-02}
+      \field{day}{9}
+      \field{langid}{australian}
+      \field{month}{8}
+      \field{shorttitle}{News and {{Interest Rate Expectations}}}
+      \field{title}{News and {{Interest Rate Expectations}}: {{A Study}} of {{Six Central Banks}} | {{Conference}} – 2004}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.rba.gov.au/publications/confs/2004/connolly-kohler.html
+      \endverb
+      \verb{url}
+      \verb https://www.rba.gov.au/publications/confs/2004/connolly-kohler.html
+      \endverb
+    \endentry
+    \entry{ehrmann2007}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=51ac5432d6fc0c5b9f68aff37d6feb33}{%
+           family={Ehrmann},
+           familyi={E\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25dfeefc5dc50ca621ee5cb966d86e10}{%
+           family={Fratzscher},
+           familyi={F\bibinitperiod},
+           given={Marcel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9d5602562feedb78cc47d3ae824da61c}
+      \strng{fullhash}{9d5602562feedb78cc47d3ae824da61c}
+      \strng{bibnamehash}{9d5602562feedb78cc47d3ae824da61c}
+      \strng{authorbibnamehash}{9d5602562feedb78cc47d3ae824da61c}
+      \strng{authornamehash}{9d5602562feedb78cc47d3ae824da61c}
+      \strng{authorfullhash}{9d5602562feedb78cc47d3ae824da61c}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The paper assesses the communication strategies of the Federal Reserve, the Bank of England, and the European Central Bank and their effectiveness. We find that the effectiveness of communication is not independent from the decision-making process. The paper shows that the Federal Reserve has been pursuing a highly individualistic communication strategy amid a collegial approach to decision making, while the Bank of England is using a collegial communication strategy and highly individualistic decision making. The European Central Bank (ECB) has chosen a collegial approach both in its communication and in its decision making. Assessing these strategies, we find that predictability of policy decisions and the responsiveness of financial markets to communication are equally good for the Federal Reserve and the ECB. This suggests that there may not be a single best approach to designing a central bank communication strategy.}
+      \field{annotation}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.0022-2879.2007.00034.x}
+      \field{issn}{1538-4616}
+      \field{journaltitle}{Journal of Money, Credit and Banking}
+      \field{langid}{english}
+      \field{number}{2-3}
+      \field{shorttitle}{Communication by {{Central Bank Committee Members}}}
+      \field{title}{Communication by {{Central Bank Committee Members}}: {{Different Strategies}}, {{Same Effectiveness}}?}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{39}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{509\bibrangedash 541}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1111/j.0022-2879.2007.00034.x
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/VU7DWKGT/Ehrmann and Fratzscher - 2007 - Communication by Central Bank Committee Members D.pdf;/Users/indre/Zotero/storage/L6DKYS8U/j.0022-2879.2007.00034.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0022-2879.2007.00034.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0022-2879.2007.00034.x
+      \endverb
+      \keyw{Bank of England,committee,communication,E43,E52,E58,effectiveness,European Central Bank,Federal Reserve,G12,monetary policy,strategies}
+    \endentry
+    \entry{gurkaynak2004}{report}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ec4332733b7a4646219250aa7d409c5b}{%
+           family={Gürkaynak},
+           familyi={G\bibinitperiod},
+           given={Refet\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fa360b7c77a4165a45e19ae82069b7f}{%
+           family={Sack},
+           familyi={S\bibinitperiod},
+           given={Brian\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ff0d64a3f4ed2fa95aa6e29f5c3de95}{%
+           family={Swanson},
+           familyi={S\bibinitperiod},
+           given={Eric\bibnamedelima T.},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Social Science Research Network}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{21706018b9e46a386b0c64c91863abec}
+      \strng{fullhash}{493753da039d9b46199e9405ddad8589}
+      \strng{bibnamehash}{493753da039d9b46199e9405ddad8589}
+      \strng{authorbibnamehash}{493753da039d9b46199e9405ddad8589}
+      \strng{authornamehash}{21706018b9e46a386b0c64c91863abec}
+      \strng{authorfullhash}{493753da039d9b46199e9405ddad8589}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We investigate the effects of U.S. monetary policy on asset prices using a high-frequency event-study analysis. We test whether these effects are adequately captured by a single factor - changes in the federal funds rate target - and find that they are not. Instead, we find that two factors are required. These factors have a structural interpretation as a current federal funds rate target factor and a future path of policy factor, with the latter closely associated with FOMC statements. We measure the effects of these two factors on bond yields and stock prices using a new intraday dataset going back to 1990. According to our estimates, both monetary policy actions and statements have important but differing effects on asset prices, with statements having a much greater impact on longer-term Treasury yields.}
+      \field{day}{1}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{ID 633281}
+      \field{shorttitle}{Do {{Actions Speak Louder}} than {{Words}}?}
+      \field{title}{Do {{Actions Speak Louder}} than {{Words}}? {{The Response}} of {{Asset Prices}} to {{Monetary Policy Actions}} and {{Statements}}}
+      \field{type}{SSRN Scholarly Paper}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2139/ssrn.633281
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/VT65D5U7/Gürkaynak et al. - 2004 - Do Actions Speak Louder than Words The Response o.pdf;/Users/indre/Zotero/storage/R2RJ82ET/papers.html
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=633281
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=633281
+      \endverb
+      \keyw{assest prices,factor models,FOMC statement,Measuring monetary policy surprises}
+    \endentry
+    \entry{guthrie2000}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a1be948a5228306c38a7b3e85ef05527}{%
+           family={Guthrie},
+           familyi={G\bibinitperiod},
+           given={Graeme},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1022f600ae81af5a9aab3562b89da5ae}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{02c46bdc31054ee1ffd95e63dd062cdd}
+      \strng{fullhash}{02c46bdc31054ee1ffd95e63dd062cdd}
+      \strng{bibnamehash}{02c46bdc31054ee1ffd95e63dd062cdd}
+      \strng{authorbibnamehash}{02c46bdc31054ee1ffd95e63dd062cdd}
+      \strng{authornamehash}{02c46bdc31054ee1ffd95e63dd062cdd}
+      \strng{authorfullhash}{02c46bdc31054ee1ffd95e63dd062cdd}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper explains how central bank statements, rather than open market operations, can be used to implement monetary policy. In the extreme, policy instruments can be held constant, and yet interest rates will evolve along the path desired by the central bank. We show how the recent implementation of monetary policy in New Zealand works in this way. Using announcement data from New Zealand, we find that open mouth operations lead to large changes in interest rates across all maturities, and these changes cannot be explained by open market operations. Implications are drawn for monetary policy in other jurisdictions.}
+      \field{day}{1}
+      \field{issn}{0304-3932}
+      \field{journaltitle}{Journal of Monetary Economics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{2}
+      \field{shortjournal}{Journal of Monetary Economics}
+      \field{title}{Open Mouth Operations}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{46}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{489\bibrangedash 516}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1016/S0304-3932(00)00035-0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304393200000350
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304393200000350
+      \endverb
+      \keyw{Announcements,Liquidity effect,Monetary policy,Open market operations}
+    \endentry
+    \entry{hubert2017}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6c1e1e9950749036ec5a604777a92e7c}{%
+           family={Hubert},
+           familyi={H\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter}%
+      }
+      \strng{namehash}{6c1e1e9950749036ec5a604777a92e7c}
+      \strng{fullhash}{6c1e1e9950749036ec5a604777a92e7c}
+      \strng{bibnamehash}{6c1e1e9950749036ec5a604777a92e7c}
+      \strng{authorbibnamehash}{6c1e1e9950749036ec5a604777a92e7c}
+      \strng{authornamehash}{6c1e1e9950749036ec5a604777a92e7c}
+      \strng{authorfullhash}{6c1e1e9950749036ec5a604777a92e7c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We aim to investigate the simultaneous and interacted effects of central bank qualitative and quantitative communication on private inflation expectations, measured with survey and market-based measures. The effects of ECB inflation projections and Governing Council members’ speeches are identified through an instrumental-variables estimation using a principal component analysis to generate relevant instruments. We find that ECB projections have a positive effect on current-year forecasts, and that ECB projections and speeches are substitutes at longer horizons. Moreover, ECB speeches and the ECB rate reinforce the effect of ECB projections when they are consistent, and convey the same signal about inflationary pressures.}
+      \field{day}{1}
+      \field{issn}{1935-1690}
+      \field{journaltitle}{The B.E. Journal of Macroeconomics}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Qualitative and Quantitative Central Bank Communication and Inflation Expectations}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{17}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1515/bejm-2016-0024
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/FMZMU3IF/Hubert - 2017 - Qualitative and quantitative central bank communic.pdf;/Users/indre/Zotero/storage/7U4IZYNH/html.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.degruyter.com/document/doi/10.1515/bejm-2016-0024/html
+      \endverb
+      \verb{url}
+      \verb https://www.degruyter.com/document/doi/10.1515/bejm-2016-0024/html
+      \endverb
+    \endentry
+    \entry{jansen2007}{report}{useprefix=true}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0e2113934755a17be6fb3fe5fd762a5b}{%
+           family={Jansen},
+           familyi={J\bibinitperiod},
+           given={David-Jan},
+           giveni={D\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6f418ba40c73a62cd1e9c47beb33f60}{%
+           family={Haan},
+           familyi={H\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CESifo Working Paper}%
+      }
+      \strng{namehash}{2d8102539c3c0f627ffd7979e5694bbf}
+      \strng{fullhash}{2d8102539c3c0f627ffd7979e5694bbf}
+      \strng{bibnamehash}{2d8102539c3c0f627ffd7979e5694bbf}
+      \strng{authorbibnamehash}{2d8102539c3c0f627ffd7979e5694bbf}
+      \strng{authornamehash}{2d8102539c3c0f627ffd7979e5694bbf}
+      \strng{authorfullhash}{2d8102539c3c0f627ffd7979e5694bbf}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Using daily data on inflation-indexed bonds, we find evidence of a negative relationship between ECB communication regarding risks to price stability - measured on the basis of the frequency and strength of the keyword vigilance' - and changes in euro area break-even inflation. However, this result is only found for the second half of 2005. At that time, the start of a tightening of ECB monetary policy was increasingly likely. This suggests that communication should be closely in line with policy actions before it can be effective. Still, we also find that the economic significance of this type of communication has been small.}
+      \field{langid}{english}
+      \field{number}{2134}
+      \field{shorttitle}{The Importance of Being Vigilant}
+      \field{title}{The Importance of Being Vigilant: Has {{ECB}} Communication Influenced {{Euro}} Area Inflation Expectations?}
+      \field{type}{Working Paper}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/3PWX5PA4/Jansen and de Haan - 2007 - The importance of being vigilant has ECB communic.pdf;/Users/indre/Zotero/storage/PVVXEYW8/26178.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.econstor.eu/handle/10419/26178
+      \endverb
+      \verb{url}
+      \verb https://www.econstor.eu/handle/10419/26178
+      \endverb
+    \endentry
+    \entry{kohn2003}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2ca4bb92abcd0fe75e5fc74a0cf36a0a}{%
+           family={Kohn},
+           familyi={K\bibinitperiod},
+           given={Donald\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fa360b7c77a4165a45e19ae82069b7f}{%
+           family={Sack},
+           familyi={S\bibinitperiod},
+           given={Brian\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{86e8dee91d6d47a51e5adfba43c1c281}
+      \strng{fullhash}{86e8dee91d6d47a51e5adfba43c1c281}
+      \strng{bibnamehash}{86e8dee91d6d47a51e5adfba43c1c281}
+      \strng{authorbibnamehash}{86e8dee91d6d47a51e5adfba43c1c281}
+      \strng{authornamehash}{86e8dee91d6d47a51e5adfba43c1c281}
+      \strng{authorfullhash}{86e8dee91d6d47a51e5adfba43c1c281}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The Federal Reserve Board of Governors in Washington DC.}
+      \field{day}{1}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{shorttitle}{Central {{Bank Talk}}}
+      \field{title}{Central {{Bank Talk}}: {{Does It Matter}} and {{Why}}?}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/3C5FMBUM/Kohn and Sack - 2003 - Central Bank Talk Does It Matter and Why.pdf;/Users/indre/Zotero/storage/PWQWRA9B/central-bank-talk-does-it-matter-and-why.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.federalreserve.gov/econres/feds/central-bank-talk-does-it-matter-and-why.htm
+      \endverb
+      \verb{url}
+      \verb https://www.federalreserve.gov/econres/feds/central-bank-talk-does-it-matter-and-why.htm
+      \endverb
+    \endentry
+    \entry{lamla2011}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7cc9e114b2f834b5d569a3050f344013}{%
+           family={Lamla},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2c6f036ec7f98dfe7b8b5034cdeb26a}{%
+           family={Lein},
+           familyi={L\bibinitperiod},
+           given={Sarah\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{b60cd3c34332117f19ee83bcf30f44c3}
+      \strng{fullhash}{b60cd3c34332117f19ee83bcf30f44c3}
+      \strng{bibnamehash}{b60cd3c34332117f19ee83bcf30f44c3}
+      \strng{authorbibnamehash}{b60cd3c34332117f19ee83bcf30f44c3}
+      \strng{authornamehash}{b60cd3c34332117f19ee83bcf30f44c3}
+      \strng{authorfullhash}{b60cd3c34332117f19ee83bcf30f44c3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This article analyses financial markets’ reaction to European Central Bank's (ECB) communication. We apply a novel indicator that quantifies the contents of the ECB's introductory statements and allows disentangling ECB statements on prices, the real and the monetary sector. We provide evidence that it matters what issue the ECB is speaking about: especially, the ECB's statements on price developments represent important news to financial markets. It also matters when the ECB affects markets: communication drives maturities above 4 months.}
+      \field{annotation}{\_eprint: https://doi.org/10.1080/00036846.2010.491452}
+      \field{day}{1}
+      \field{issn}{0003-6846}
+      \field{journaltitle}{Applied Economics}
+      \field{month}{11}
+      \field{number}{28}
+      \field{shorttitle}{What Matters When?}
+      \field{title}{What Matters When? {{The}} Impact of {{ECB}} Communication on Financial Market Expectations}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{43}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{4289\bibrangedash 4309}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1080/00036846.2010.491452
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/63Z98H3B/Lamla and Lein - 2011 - What matters when The impact of ECB communication.pdf;/Users/indre/Zotero/storage/8FEBN6X7/00036846.2010.html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/00036846.2010.491452
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/00036846.2010.491452
+      \endverb
+    \endentry
+    \entry{leombroni2021}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9e5dc96017edfca3e482e359f513f5c1}{%
+           family={Leombroni},
+           familyi={L\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a5c9135aec99f1ab73479e5bf201972}{%
+           family={Vedolin},
+           familyi={V\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a0b9333a99c5bafc64bc0e1d25a4bab}{%
+           family={Venter},
+           familyi={V\bibinitperiod},
+           given={Gyuri},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=277476d80d715a8169c71eede7a8865c}{%
+           family={Whelan},
+           familyi={W\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cf14e87f276ed42b5aeab3cd8aac6409}
+      \strng{fullhash}{f6f6ee532f8ac167bd31f1e2295cadf5}
+      \strng{bibnamehash}{f6f6ee532f8ac167bd31f1e2295cadf5}
+      \strng{authorbibnamehash}{f6f6ee532f8ac167bd31f1e2295cadf5}
+      \strng{authornamehash}{cf14e87f276ed42b5aeab3cd8aac6409}
+      \strng{authorfullhash}{f6f6ee532f8ac167bd31f1e2295cadf5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we argue that monetary policy in the form of central bank communication can shape long-term interest rates by changing risk premia. Using high-frequency movements of default-free rates and equity, we show that monetary policy communications by the European Central Bank on regular announcement days led to a significant yield spread between peripheral and core countries during the European sovereign debt crisis by increasing credit risk premia. We also show that central bank communication has a powerful impact on the yield curve outside regular monetary policy days. We interpret these findings through the lens of a model linking information embedded in central bank communication to sovereign yields.}
+      \field{day}{1}
+      \field{issn}{0304-405X}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{3}
+      \field{shortjournal}{Journal of Financial Economics}
+      \field{title}{Central Bank Communication and the Yield Curve}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{141}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{860\bibrangedash 880}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2021.04.036
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304405X21001665
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304405X21001665
+      \endverb
+      \keyw{Central bank communication,Eurozone,Interest rates,Monetary policy}
+    \endentry
+    \entry{loughran2011}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e29b48c3b17cf53e834d55eac5dbef23}{%
+           family={Loughran},
+           familyi={L\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3f24325e6e9481dfdd897ce770672400}{%
+           family={Mcdonald},
+           familyi={M\bibinitperiod},
+           given={Bill},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{da4e322916adb6c43af3bbfeba43449b}
+      \strng{fullhash}{da4e322916adb6c43af3bbfeba43449b}
+      \strng{bibnamehash}{da4e322916adb6c43af3bbfeba43449b}
+      \strng{authorbibnamehash}{da4e322916adb6c43af3bbfeba43449b}
+      \strng{authornamehash}{da4e322916adb6c43af3bbfeba43449b}
+      \strng{authorfullhash}{da4e322916adb6c43af3bbfeba43449b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Previous research uses negative word counts to measure the tone of a text. We show that word lists developed for other disciplines misclassify common words in financial text. In a large sample of 10-Ks during 1994 to 2008, almost three-fourths of the words identified as negative by the widely used Harvard Dictionary are words typically not considered negative in financial contexts. We develop an alternative negative word list, along with five other word lists, that better reflect tone in financial text. We link the word lists to 10-K filing returns, trading volume, return volatility, fraud, material weakness, and unexpected earnings.}
+      \field{annotation}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1540-6261.2010.01625.x}
+      \field{issn}{1540-6261}
+      \field{journaltitle}{The Journal of Finance}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{shorttitle}{When {{Is}} a {{Liability Not}} a {{Liability}}?}
+      \field{title}{When {{Is}} a {{Liability Not}} a {{Liability}}? {{Textual Analysis}}, {{Dictionaries}}, and 10-{{Ks}}}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{66}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{35\bibrangedash 65}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.2010.01625.x
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/LMS9PMHR/Loughran and Mcdonald - 2011 - When Is a Liability Not a Liability Textual Analy.pdf;/Users/indre/Zotero/storage/5ZVM3W4Y/j.1540-6261.2010.01625.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6261.2010.01625.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6261.2010.01625.x
+      \endverb
+    \endentry
+    \entry{lucca2009}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3601be97dd1d738844b537aae2d87d0b}{%
+           family={Lucca},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima O.},
+           giveni={D\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e15a472d2d02ff68db9c45773f43bbbe}{%
+           family={Trebbi},
+           familyi={T\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{f0479868bc7df5ccab67617d15e8f6c1}
+      \strng{fullhash}{f0479868bc7df5ccab67617d15e8f6c1}
+      \strng{bibnamehash}{f0479868bc7df5ccab67617d15e8f6c1}
+      \strng{authorbibnamehash}{f0479868bc7df5ccab67617d15e8f6c1}
+      \strng{authornamehash}{f0479868bc7df5ccab67617d15e8f6c1}
+      \strng{authorfullhash}{f0479868bc7df5ccab67617d15e8f6c1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present a new automated, objective and intuitive scoring technique to measure the content of central bank communication about future interest rate decisions based on information from the Internet and news sources. We apply the methodology to statements released by the Federal Open Market Committee (FOMC) after its policy meetings starting in 1999. Using intra-day financial quotes, we find that short-term nominal Treasury yields respond to changes in policy rates around policy announcements, whereas longer-dated Treasuries mainly react to changes in policy communication. Using lower frequency data, we find that changes in the content of the statements lead policy rate decisions by more than a year in univariate interest rate forecasting and vector autoregression (VAR) models. When we estimate Treasury yield responses to the shocks identified in the VAR, we find communication to be a more important determinant of Treasury rates than contemporaneous policy rate decisions. These results are consistent with the view that the FOMC releases information about future policy rate actions in its statements and that market participants incorporate this information when pricing longer-dated Treasuries. Finally, we decompose realized policy rate decisions using a forward-looking Taylor rule model. Based on this decomposition, we find that FOMC statements contain significant information regarding both the predicted rule-based interest rate and the Taylor-rule residual component, and that content of the statements leads the residual by a few quarters.}
+      \field{month}{9}
+      \field{number}{15367}
+      \field{series}{Working {{Paper Series}}}
+      \field{shorttitle}{Measuring {{Central Bank Communication}}}
+      \field{title}{Measuring {{Central Bank Communication}}: {{An Automated Approach}} with {{Application}} to {{FOMC Statements}}}
+      \field{type}{Working Paper}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.3386/w15367
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/E64SDN8S/Lucca and Trebbi - 2009 - Measuring Central Bank Communication An Automated.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nber.org/papers/w15367
+      \endverb
+      \verb{url}
+      \verb https://www.nber.org/papers/w15367
+      \endverb
+    \endentry
+    \entry{musard-gies2006}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f5121ce5d9094e8c11f15bb959fad881}{%
+           family={Musard-Gies},
+           familyi={M\bibinithyphendelim G\bibinitperiod},
+           given={Marie},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f5121ce5d9094e8c11f15bb959fad881}
+      \strng{fullhash}{f5121ce5d9094e8c11f15bb959fad881}
+      \strng{bibnamehash}{f5121ce5d9094e8c11f15bb959fad881}
+      \strng{authorbibnamehash}{f5121ce5d9094e8c11f15bb959fad881}
+      \strng{authornamehash}{f5121ce5d9094e8c11f15bb959fad881}
+      \strng{authorfullhash}{f5121ce5d9094e8c11f15bb959fad881}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In this study, we aim at testing whether press conferences held after the meeting of the European Central Bank's monetary policy council steer market interest rates in the Euro zone. To meet this goal, we quantify the statements according to whether they are neutral, hawkish or dovish. We show, using a principal components analysis, that market interest rates react significantly to the bias in statements, and more particularly to changes in statements from one meeting to the next. Moreover, we find that the short end of the yield curve reacts more sharply to statements than the long segment: the effect of statements peaks on interest rates with a maturity of 6 or 12 months and is smaller for the longer maturities. Using non-parametric tests confirms our previous results.}
+      \field{annotation}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-9957.2006.00520.x}
+      \field{issn}{1467-9957}
+      \field{journaltitle}{The Manchester School}
+      \field{langid}{english}
+      \field{number}{s1}
+      \field{shorttitle}{Do {{European Central Bank}}'s {{Statements Steer Interest Rates}} in the {{Euro Zone}}?}
+      \field{title}{Do {{European Central Bank}}'s {{Statements Steer Interest Rates}} in the {{Euro Zone}}?*}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{74}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{116\bibrangedash 139}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1111/j.1467-9957.2006.00520.x
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/D6YHFIUF/Musard-Gies - 2006 - Do European Central Bank's Statements Steer Intere.pdf;/Users/indre/Zotero/storage/2IWSIAYE/j.1467-9957.2006.00520.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9957.2006.00520.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9957.2006.00520.x
+      \endverb
+    \endentry
+    \entry{picault2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a6b5f8a7097eeac5867e3113f2f6c59e}{%
+           family={Picault},
+           familyi={P\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4332964c91851351360a1773db320843}{%
+           family={Renault},
+           familyi={R\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f47c607c5e5f95eb5a08ead6b7ee14a5}
+      \strng{fullhash}{f47c607c5e5f95eb5a08ead6b7ee14a5}
+      \strng{bibnamehash}{f47c607c5e5f95eb5a08ead6b7ee14a5}
+      \strng{authorbibnamehash}{f47c607c5e5f95eb5a08ead6b7ee14a5}
+      \strng{authornamehash}{f47c607c5e5f95eb5a08ead6b7ee14a5}
+      \strng{authorfullhash}{f47c607c5e5f95eb5a08ead6b7ee14a5}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We develop a field-specific dictionary to measure the stance of the European Central Bank (ECB) monetary policy (dovish, neutral, hawkish) and the state of the Eurozone economy (positive, neutral, negative) through the content of ECB press conferences. In contrast with traditional textual analysis, we propose a novel approach using term-weighting and contiguous sequence of words (n-grams) to better capture the subtlety of central bank communication. We find that quantifying ECB communication using our field-specific weighted lexicon helps to explain future ECB monetary decisions when considering an augmented Taylor rule. Regarding European stock market volatility, we find that markets are more (less) volatile on the day following a conference with a negative (positive) tone about the euro area economic outlook. Our indicators significantly outperform a textual classification based on the Loughran–McDonald or Apel–Blix Grimaldi dictionaries and a media-based measure of economic policy uncertainty.}
+      \field{day}{1}
+      \field{issn}{0261-5606}
+      \field{journaltitle}{Journal of International Money and Finance}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{shortjournal}{Journal of International Money and Finance}
+      \field{shorttitle}{Words Are Not All Created Equal}
+      \field{title}{Words Are Not All Created Equal: {{A}} New Measure of {{ECB}} Communication}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{79}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{136\bibrangedash 156}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/j.jimonfin.2017.09.005
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0261560617301808
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0261560617301808
+      \endverb
+      \keyw{Central banking,ECB,Interest rates,Monetary policy,Stock market volatility,Taylor rule,Textual analysis}
+    \endentry
+    \entry{reeves2007}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a782fcc05874bf7c387513a1d4c0832d}{%
+           family={Reeves},
+           familyi={R\bibinitperiod},
+           given={Rachel},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97cf5af8f7b16ca9752e215b7f11e123}{%
+           family={Sawicki},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2b8e3dca282c1032cf635a6359011a4b}
+      \strng{fullhash}{2b8e3dca282c1032cf635a6359011a4b}
+      \strng{bibnamehash}{2b8e3dca282c1032cf635a6359011a4b}
+      \strng{authorbibnamehash}{2b8e3dca282c1032cf635a6359011a4b}
+      \strng{authornamehash}{2b8e3dca282c1032cf635a6359011a4b}
+      \strng{authorfullhash}{2b8e3dca282c1032cf635a6359011a4b}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper examines how United Kingdom financial markets react to Bank of England communication. We might expect asset prices to react to official communication if it is informative to market participants about the policy inclination or economic outlook and risks. We find evidence that the publication of the Minutes of Monetary Policy Committee meetings and the Inflation Report significantly affect near-term interest rate expectations, an effect particularly visible in intraday data. Our results for the United Kingdom are arguably less strong than Kohn and Sack's [Kohn, D., Sack, B., 2003. Central bank talk: does it matter and why? Federal Reserve Board Finance and Economics Discussion Series 2003–55] findings for United States Federal Reserve communication, where the impact extends along the yield curve. Although differences in institutional frameworks between the United Kingdom and United States mean communications are not directly comparable, our results might also reflect the different mandates of the FOMC and the MPC, with the Federal Reserve having greater freedom to interpret its objectives.}
+      \field{day}{1}
+      \field{issn}{0176-2680}
+      \field{journaltitle}{European Journal of Political Economy}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{1}
+      \field{series}{Central Bank Transparency and Central Bank Communication}
+      \field{shortjournal}{European Journal of Political Economy}
+      \field{title}{Do Financial Markets React to {{Bank}} of {{England}} Communication?}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{23}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{207\bibrangedash 227}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/j.ejpoleco.2006.09.018
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/VU9G6P95/Reeves and Sawicki - 2007 - Do financial markets react to Bank of England comm.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S017626800600108X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S017626800600108X
+      \endverb
+      \keyw{Communication,Monetary policy,Transparency}
+    \endentry
+    \entry{rosa2011}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=47539fbd91f0667a04b4116d1ef1ec23}{%
+           family={Rosa},
+           familyi={R\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{47539fbd91f0667a04b4116d1ef1ec23}
+      \strng{fullhash}{47539fbd91f0667a04b4116d1ef1ec23}
+      \strng{bibnamehash}{47539fbd91f0667a04b4116d1ef1ec23}
+      \strng{authorbibnamehash}{47539fbd91f0667a04b4116d1ef1ec23}
+      \strng{authornamehash}{47539fbd91f0667a04b4116d1ef1ec23}
+      \strng{authorfullhash}{47539fbd91f0667a04b4116d1ef1ec23}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper examines and compares the communication strategies of the Federal Reserve and the European Central Bank, and their effectiveness. First, we find that the surprise components of both monetary policy actions and statements have important but differing effects on asset prices, with unexpected communication having a much greater impact on longer-term interest rates. Second, both the ECB and the Fed have proven to be equally successful in moving their domestic asset prices using either monetary policy or news shocks. However, the response of the American yield curve to the surprise component of Fed's statements is larger than the reaction of the European term structure to ECB's announcements. This result is intimately related to the amplitude of the policy rate cycle that is much larger in the US than in the euro area combined with the bounded support of the news shock. Third, we analyze the cross-effects and show that the Fed has been more able to move the European interest rates of all maturities than the ECB to move American rates. This finding is tied to the predominance of dollar fixed income assets rather than to an attempt of the ECB to mimic the Fed.}
+      \field{annotation}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-9485.2010.00536.x}
+      \field{issn}{1467-9485}
+      \field{journaltitle}{Scottish Journal of Political Economy}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{shorttitle}{Talking {{Less}} and {{Moving}} the {{Market More}}}
+      \field{title}{Talking {{Less}} and {{Moving}} the {{Market More}}: {{Evidence}} from the {{Ecb}} and the {{Fed}}}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{58}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{51\bibrangedash 81}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1111/j.1467-9485.2010.00536.x
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/57W8JDDF/Rosa - 2011 - Talking Less and Moving the Market More Evidence .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9485.2010.00536.x
+      \endverb
+      \verb{url}
+      \verb https://www.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9485.2010.00536.x
+      \endverb
+    \endentry
+    \entry{rosa2007}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=47539fbd91f0667a04b4116d1ef1ec23}{%
+           family={Rosa},
+           familyi={R\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04446534dc0365303568ebf8aa5d5e19}{%
+           family={Verga},
+           familyi={V\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{33fc496d28ba01e698b45e422665f823}
+      \strng{fullhash}{33fc496d28ba01e698b45e422665f823}
+      \strng{bibnamehash}{33fc496d28ba01e698b45e422665f823}
+      \strng{authorbibnamehash}{33fc496d28ba01e698b45e422665f823}
+      \strng{authornamehash}{33fc496d28ba01e698b45e422665f823}
+      \strng{authorfullhash}{33fc496d28ba01e698b45e422665f823}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In this paper we analyse the introductory statement of the ECB President in his monthly press conference held on Governing Council meeting days. We provide a glossary that translates the qualitative information of the press conferences into an ordered scale. We find that the predictive ability of these statements is similar to that implied by market-based measures of monetary policy expectations. Moreover, ECB words provide complementary, rather than substitutable, information with respect to macroeconomic variables. Finally, we show that market expectations react to the unexpected component of the information released by the ECB, after controlling for the monetary policy shock.}
+      \field{day}{1}
+      \field{issn}{0176-2680}
+      \field{journaltitle}{European Journal of Political Economy}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{1}
+      \field{series}{Central Bank Transparency and Central Bank Communication}
+      \field{shortjournal}{European Journal of Political Economy}
+      \field{shorttitle}{On the Consistency and Effectiveness of Central Bank Communication}
+      \field{title}{On the Consistency and Effectiveness of Central Bank Communication: {{Evidence}} from the {{ECB}}}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{23}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{146\bibrangedash 175}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1016/j.ejpoleco.2006.09.016
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0176268006001066
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0176268006001066
+      \endverb
+      \keyw{Consistency,ECB communication,Glossary,Monetary policy forecast,News shocks}
+    \endentry
+    \entry{rozkrut2007}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6d567afe2e685e18898394a1e5833fe6}{%
+           family={Rozkrut},
+           familyi={R\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b030df5d1b2bc6346891a4c0ae65366}{%
+           family={Rybiński},
+           familyi={R\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73671195bf6b06bdeab38b33aa416d29}{%
+           family={Sztaba},
+           familyi={S\bibinitperiod},
+           given={Lucyna},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fe2183017bd99cd7a8b7bbf8ee787a0}{%
+           family={Szwaja},
+           familyi={S\bibinitperiod},
+           given={Radosław},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1549e62f6cb88acbac121ee17b58dcb7}
+      \strng{fullhash}{37cdd6f875b43ef41fb76f7fcadcc3f2}
+      \strng{bibnamehash}{37cdd6f875b43ef41fb76f7fcadcc3f2}
+      \strng{authorbibnamehash}{37cdd6f875b43ef41fb76f7fcadcc3f2}
+      \strng{authornamehash}{1549e62f6cb88acbac121ee17b58dcb7}
+      \strng{authorfullhash}{37cdd6f875b43ef41fb76f7fcadcc3f2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{On the basis of a unique database of policy makers’ verbal comments, we find that central bank “talk” in the Czech Republic, Hungary, and Poland influences behavior of financial markets. This effect, however, differs among the countries. The CEC3 central banks’ communication strategies are far from uniform. The CNB does a better job than the other central banks in matching words with deeds. Communication affects monetary policy predictability, but results depend on the committee structure and communication style. Finally, we provide evidence that pursuance of too many targets leads to inconsistencies in central bank communication.}
+      \field{day}{1}
+      \field{issn}{0176-2680}
+      \field{journaltitle}{European Journal of Political Economy}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{1}
+      \field{series}{Central Bank Transparency and Central Bank Communication}
+      \field{shortjournal}{European Journal of Political Economy}
+      \field{shorttitle}{Quest for Central Bank Communication}
+      \field{title}{Quest for Central Bank Communication: {{Does}} It Pay to Be “Talkative”?}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{23}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{176\bibrangedash 206}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1016/j.ejpoleco.2006.09.011
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0176268006000917
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0176268006000917
+      \endverb
+      \keyw{Communication,Monetary policy,Transparency}
+    \endentry
+    \entry{schmeling2019}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=74926411d7d07d82224899bafabc6ed4}{%
+           family={Schmeling},
+           familyi={S\bibinitperiod},
+           given={Maik},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=524bcaa0129b312fcc1ac0c83f6cfd72}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Social Science Research Network}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{cd0ecb6e8c21fc3b215da028f518f8be}
+      \strng{fullhash}{cd0ecb6e8c21fc3b215da028f518f8be}
+      \strng{bibnamehash}{cd0ecb6e8c21fc3b215da028f518f8be}
+      \strng{authorbibnamehash}{cd0ecb6e8c21fc3b215da028f518f8be}
+      \strng{authornamehash}{cd0ecb6e8c21fc3b215da028f518f8be}
+      \strng{authorfullhash}{cd0ecb6e8c21fc3b215da028f518f8be}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper shows that changes in the tone of central bank communication have a significant effect on asset prices. Tone captures how the central bank frames economic fundamentals and its monetary policy. When tone becomes more positive, stock prices increase, whereas credit spreads and volatility risk premia decrease. These tone effects are robust to controlling for fundamentals, policy actions, and other features of central bank communication. Our results suggest that communication tone is a generic instrument of monetary policy, which affects asset prices through a risk-based channel.}
+      \field{day}{23}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{ID 2629978}
+      \field{title}{Does {{Central Bank Tone Move Asset Prices}}?}
+      \field{type}{SSRN Scholarly Paper}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2139/ssrn.2629978
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/76R3HHYW/Schmeling and Wagner - 2019 - Does Central Bank Tone Move Asset Prices.pdf;/Users/indre/Zotero/storage/P58ZXIFY/Papers.html
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=2629978
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=2629978
+      \endverb
+      \keyw{central bank communication,credit spreads,monetary policy,risk premia,stock returns,textual analysis,volatility risk}
+    \endentry
+    \entry{ullrich2008}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=df073001f73cfe192b1cfa59ac7169d0}{%
+           family={Ullrich},
+           familyi={U\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df073001f73cfe192b1cfa59ac7169d0}
+      \strng{fullhash}{df073001f73cfe192b1cfa59ac7169d0}
+      \strng{bibnamehash}{df073001f73cfe192b1cfa59ac7169d0}
+      \strng{authorbibnamehash}{df073001f73cfe192b1cfa59ac7169d0}
+      \strng{authornamehash}{df073001f73cfe192b1cfa59ac7169d0}
+      \strng{authorfullhash}{df073001f73cfe192b1cfa59ac7169d0}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The communication policy of the European Central Bank (ECB) attracts a lot of attention from financial markets. This paper analyses the informational content of the monthly introductory statements of the ECB president explaining interest rate decisions with regard to inflation expectations of financial market experts for the euro area from February 1999 to July 2006. Tests were conducted for the influence of ECB communication on expectations formation besides other macroeconomic variables. As the results indicate, the indicator measuring the informational content of ECB rhetoric contributes to the explanation of inflation expectations formation.}
+      \field{day}{1}
+      \field{issn}{1062-9408}
+      \field{journaltitle}{The North American Journal of Economics and Finance}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{1}
+      \field{series}{Relation between {{Monetary Policy}} and {{Financial Markets}}}
+      \field{shortjournal}{The North American Journal of Economics and Finance}
+      \field{title}{Inflation Expectations of Experts and {{ECB}} Communication}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{volume}{19}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{93\bibrangedash 108}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.najef.2008.03.002
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/DQT8QBA4/Ullrich - 2008 - Inflation expectations of experts and ECB communic.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1062940808000107
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1062940808000107
+      \endverb
+      \keyw{Carlson–Parkin method,Central bank communication,Inflation expectations formation,Survey expectations}
+    \endentry
+    \entry{woodford2005}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4e7f6ec4eb22dde123b8ebb1e85954fd}{%
+           family={Woodford},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{4e7f6ec4eb22dde123b8ebb1e85954fd}
+      \strng{fullhash}{4e7f6ec4eb22dde123b8ebb1e85954fd}
+      \strng{bibnamehash}{4e7f6ec4eb22dde123b8ebb1e85954fd}
+      \strng{authorbibnamehash}{4e7f6ec4eb22dde123b8ebb1e85954fd}
+      \strng{authornamehash}{4e7f6ec4eb22dde123b8ebb1e85954fd}
+      \strng{authorfullhash}{4e7f6ec4eb22dde123b8ebb1e85954fd}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A notable change in central banking over the past 15 years has been a world-wide movement toward increased communication by central banks about their policy decisions, the targets that they seek to achieve through those decisions, and the central bank's view of the economy's likely future evolution. This paper considers the role of such communication in the successful conduct of monetary policy, with a particular emphasis on an issue that remains controversial: to what extent is it desirable for central banks to comment on the likely path of short-term interest rates? After reviewing general arguments for and against central-bank transparency, the paper considers two specific contexts in which central banks have been forced to consider how much they are willing to say about the future path of interest rates. The first is the experiment with policy signaling by the FOMC in the U.S., using the statement released following each Committee meeting, since August 2003. The second is the need to make some assumption about future policy when producing the projections (for future inflation and other variables) that are central to inflation-forecast targeting procedures, of the kind used by the Bank of England, the Swedish Riksbank, the Reserve Bank of New Zealand, and others. In both cases, it is argued that increased willingness to share the central bank's own assumptions about future policy with the public has increased the predictability of policy, in ways that are likely to have improved central bank's ability to achieve their stabilization objectives.}
+      \field{month}{12}
+      \field{number}{11898}
+      \field{series}{Working {{Paper Series}}}
+      \field{title}{Central {{Bank Communication}} and {{Policy Effectiveness}}}
+      \field{type}{Working Paper}
+      \field{urlday}{16}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.3386/w11898
+      \endverb
+      \verb{file}
+      \verb /Users/indre/Zotero/storage/MA96CR44/Woodford - 2005 - Central Bank Communication and Policy Effectivenes.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nber.org/papers/w11898
+      \endverb
+      \verb{url}
+      \verb https://www.nber.org/papers/w11898
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,102 @@
+% !TeX root = ./thesis.tex
+
+% Package importing
+\documentclass[12pt, a4paper, oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}    % Use 8-bit T1 fonts
+\usepackage{setspace}
+\usepackage[english]{babel} % Set English as main language
+\usepackage[utf8]{inputenc} % Allow utf-8 input
+\usepackage{mathptmx}
+\usepackage{amsfonts}       % Blackboard math symbols
+\usepackage{amsmath}        % AMS Math
+\usepackage{amssymb}        % AMS Symbols
+\usepackage{booktabs}       % Professional-quality tables
+\usepackage{threeparttable}
+\usepackage{enumitem,kantlipsum}
+\usepackage{caption}        % Captions
+\usepackage{float}          % Float control
+\usepackage{geometry}       % Easily define margins
+\usepackage{graphicx}       % Graphic materials (e.g., images)
+\usepackage{hyperref}       % Hyperlinks
+\usepackage{microtype}      % Microtypography
+\usepackage{rotating}       % Allow page rotation (e.g., for large table)
+\usepackage{tikz}           % Drawings
+\usepackage{url}            % Simple URL typesetting
+\usepackage{setspace}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{adjustbox}
+\usepackage{pdflscape}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage[nopar]{lipsum}
+\usepackage[style=apa, backend=biber]{biblatex}
+\geometry{paper=a4paper, % Change to letterpaper for US letter
+right=2.54cm, % Inner margin
+left=2.54cm, % Outer margin
+bindingoffset=.5cm, % Binding offset
+top=2.54cm, % Top margin
+bottom=2.54cm, % Bottom margin
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+% \rhead{\footnotesize\textsc{Master Thesis}}
+% \lhead{\footnotesize Does European Central Bank Tone Embedded In Speeches Move Asset Prices?}
+
+\lhead{\leftmark}
+\rhead{\thepage}
+% Adding bib file
+\addbibresource{zotero.bib}
+\pagenumbering{arabic}
+% Removing indents before paragraphs
+\setlength\parindent{0pt}
+\usepackage{setspace}
+\onehalfspacing
+
+% Custom function for creating equation conditions
+\newenvironment{conditions}
+  {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+  {\end{tabular}\par\vspace{\belowdisplayskip}}
+
+% Start of document
+\begin{document}
+\doublespacing
+
+%Titlepage in titlepage.tex
+\input{titlepage} 
+%Abstract
+\newpage
+\input{sections/abstract.tex}
+\newpage
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+\parskip=\baselineskip
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{-12pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{0pt plus 4pt minus 2pt}{-12pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{-12pt plus 2pt minus 2pt}
+\input{sections/introduction.tex}
+\input{sections/ecb_overview.tex}
+\input{sections/lit_review.tex}
+\input{sections/data.tex}
+\input{sections/methodology.tex}
+\input{sections/desc_statistics}
+\input{sections/emp_results}
+\input{sections/dicussion}
+\input{sections/conclusion}
+
+\newpage
+\printbibliography
+\newpage
+\appendix
+\input{sections/appendix.tex}
+
+\end{document}
+
+
+
